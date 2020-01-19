@@ -12,9 +12,7 @@
   "scripts": {
     "build": "tsdx build",
     "lint": "tsdx lint",
-    "prepare": "tsdx build",
-    "rundev": "nodemon dist/index.js",
-    "watch": "tsdx watch --verbose",
+    "watch": "tsdx watch --target node --verbose --noClean",
     "test": "tsdx test --passWithNoTests"
   },
   "husky": {

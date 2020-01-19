@@ -7,10 +7,10 @@
   ],
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "all:watch": "lerna run watch --stream --parallel",
-    "posts-srv:dev": "cd packages/posts-srv && yarn rundev",
+    "all:watch": "lerna run --parallel --stream watch",
+    "posts-srv:dev": "cd packages/posts-srv && yarn dev",
     "posts-srv:build": "lerna run --scope posts-srv build",
-    "all:build": "lerna run build --stream",
+    "all:build": "lerna run --stream build",
     "posts-srv:start": "cd packages/posts-srv && yarn start"
   },
   "devDependencies": {

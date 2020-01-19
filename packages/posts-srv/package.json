@@ -12,9 +12,8 @@
   "scripts": {
     "build": "tsdx build",
     "lint": "tsdx lint",
-    "prepare": "tsdx build",
     "dev": "nodemon dist/index.js",
-    "watch": "tsdx watch --verbose",
+    "watch": "tsdx watch --target node --verbose --noClean",
     "test": "tsdx test --passWithNoTests",
     "start": "node dist/index.js"
   },

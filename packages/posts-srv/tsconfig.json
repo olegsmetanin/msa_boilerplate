@@ -1,5 +1,5 @@
 {
-  "include": ["src", "types", "test", "tsdx.config.js"],
+  "include": ["src", "types", "test", "tsdx.config.js", "../../node_modules/@msa/posts-api/dist/posts-api.esm.d.ts"],
   "compilerOptions": {
     "target": "es6",
     "module": "esnext",
