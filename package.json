@@ -1,0 +1,26 @@
+{
+  "name": "msa_bilerplate",
+  "private": true,
+  "workspaces": [
+    "packages/posts-srv",
+    "packages/posts-api"
+  ],
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "all:watch": "lerna run watch --stream --parallel",
+    "posts-srv:dev": "cd packages/posts-srv && yarn rundev",
+    "posts-srv:build": "lerna run --scope posts-srv build",
+    "all:build": "lerna run build --stream",
+    "posts-srv:start": "cd packages/posts-srv && yarn start"
+  },
+  "devDependencies": {
+    "cross-env": "6.0.3",
+    "husky": "4.0.10",
+    "lerna": "3.20.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lerna run --concurrency 1 --stream precommit"
+    }
+  }
+}
